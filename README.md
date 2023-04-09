@@ -14,6 +14,7 @@ To get started with this project, you'll need to have Node.js and MongoDB instal
 ## With Docker
 
 - Build the Docker image using docker build -t image-name .
+  Don't forget to include . in end of line.
 - Run the Docker container using docker run -p 3000:3000 image-name
 - The API should now be accessible at http://localhost:3000.
 
