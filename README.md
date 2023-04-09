@@ -6,22 +6,23 @@ This is an API that converts numbers to words and words to numbers.
 ## Without Docker
 To get started with this project, you'll need to have Node.js and MongoDB installed on your machine.
 
-- Run npm install to install the necessary dependencies.
-- Run nodemon start to start the API.
-- The API should now be accessible at http://localhost:3000.
+- Run *npm install* to install the necessary dependencies.
+- Run *nodemon start* to start the API.
+- The API should now be accessible at *http://localhost:3000*.
 
 ## Installation
 ## With Docker
 
-- Build the Docker image using docker build -t <image-name> .
-- Run the Docker container using docker run -p 3000:3000 <image-name>
-- The API should now be accessible at http://localhost:3000.
+- Build the Docker image using *docker build -t image-name .*  
+  _Don't forget to include . in end of line._
+- Run the Docker container using *docker run -p 3000:3000 image-name*
+- The API should now be accessible at *http://localhost:3000*.
 
 Note that docker should be correctly installed and configured. 
 
 ## Usage
 ## Number to Word
-To convert a number to its word representation, make a GET request to /to/word with the following JSON payload:
+To convert a number to its word representation, make a GET request to */to/word* with the following JSON payload:
 ```
 {
     "number": "<number-to-convert>"
@@ -42,7 +43,7 @@ Response:
 ```
 
 ## Word to Number
-To convert a word to its number representation, make a GET request to /to/number with the following JSON payload:
+To convert a word to its number representation, make a GET request to */to/number* with the following JSON payload:
 
 ```
 {
